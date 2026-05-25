@@ -1,0 +1,15 @@
+Comparison results (test accuracy):
+- 28x28 DNN: 0.0255
+- 28x28 CNN: 0.0278
+- 64x64 DNN: 0.0255
+- 64x64 CNN: 0.0579
+- 128x128 DNN: 0.0255
+- 128x128 CNN: 0.1134
+
+Best overall model: CNN with 128x128 inputs (test accuracy 0.1134).
+
+Best epoch (by validation accuracy):
+- 128x128 CNN peaks around epoch 27 based on the saved accuracy curve image.
+- DNN validation accuracy is flat around 0.0255, so any epoch is effectively the same.
+
+Note: Exact best-epoch values are not logged in a history file. If you want precise epochs, rerun training and save per-epoch metrics.
